@@ -31,8 +31,8 @@
   </platform>
 
   <platform name="android">
-    <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="CallNumber">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="CallNumber">
             <param name="android-package" value="com.rohithvaranasi.callnumber.CFCallNumber"/>
         </feature>
     </config-file>
@@ -40,7 +40,8 @@
         <uses-permission android:name="android.permission.CALL_PHONE"/>
         <uses-feature android:name="android.hardware.telephony" android:required="false" />
     </config-file>
-    <!-- Native classes -->
-    <source-file src="src/android/CFCallNumber.java" target-dir="src/com/rohithvaranasi/callnumber" />
+        <source-file src="src/android/CFCallNumber.java" target-dir="src/com/callnumber" />
+
+    <source-file src="src/android/Open.java" target-dir="src/com/disusered"/>
   </platform>
 </plugin>
