@@ -24,12 +24,15 @@
   </platform>
 
   <platform name="android">
+    <source-file src="src/android/CFCallNumber.java" target-dir="src/com/callnumber" />
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="CallNumber">
             <param name="android-package" value="com.call.number"/>
         </feature>
     </config-file>
-    
-    <source-file src="src/android/CFCallNumber.java" target-dir="src/com/callnumber" />
+    <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    </config-file>
+     <framework src="com.android.support:support-v4:+" />
   </platform>
 </plugin>
