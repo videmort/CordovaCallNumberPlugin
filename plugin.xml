@@ -9,10 +9,6 @@
 
   <name>Cordova Call Number Plugin</name>
   <author>Rohith Varanasi, Nishil Shah</author>
-  
-  
-  <repo>https://github.com/Rohfosho/CordovaCallNumberPlugin.git</repo>
-  <issue>https://github.com/Rohfosho/CordovaCallNumberPlugin/issues</issue>
 
   <license>Apache 2.0</license>
   <keywords>cordova,call,dialer,phonegap</keywords>
@@ -41,7 +37,5 @@
         <uses-feature android:name="android.hardware.telephony" android:required="false" />
     </config-file>
         <source-file src="src/android/CFCallNumber.java" target-dir="src/com/callnumber" />
-
-    <source-file src="src/android/Open.java" target-dir="src/com/disusered"/>
   </platform>
 </plugin>
